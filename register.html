@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+　<head>
+　<title>資料庫測試</title>
+　</head>
+
+　<body>
+	<!--回傳輸入字串
+	<div>回傳輸入字串</div>
+	<form action="show.php" method="post" >
+		<input type="text" name="var" placeholder="隨意輸入">
+		<br>
+		<input type="text" name="var2" placeholder="隨意輸入">
+		<br>
+		<br>
+		<br>
+		<button type="submit">送出</button>
+		<button type="reset">重設</button>
+	</form>
+	-->	
+
+	<!--上傳圖片功能
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+      選擇要上傳的圖片：
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <br>
+      <input type="submit" value="上傳" name="submit">
+	</form>
+	-->
+	<!--
+	<script type="text/javascript">
+		for (var i = 0; i <= 3; i++) {
+			document.write("<br>");
+		}
+
+	</script>
+	-->
+
+ 	<!--於資料庫新增資料-->
+ 	<table border="1">
+		<tr>
+			<td>新增帳號</td>
+		</tr>
+	</table>
+	<ul>
+        <li><font color="#FF0000">注意：使用者名稱與密碼勿超過10個字元</font></li>
+    </ul>
+ 	<form action="insert.php" method="post" >
+ 		<font size="2">電子郵件：</font><br><input type="text" name="new_mail" placeholder="請輸入電子郵件">
+ 		<br>
+ 		<font size="2">使用者名稱：</font><br><input type="text" name="new_name" placeholder="請輸入使用者名稱">
+		<br>
+		<font size="2">密碼：</font><br><input type="text" name="new_passwd" placeholder="請輸入密碼">
+		<br>
+		<br>
+ 		<button type="submit">繼續</button>
+		<button type="reset">重設</button>
+	</form>
+	<br>
+	<p><u><a href="welcome.html">已經有帳號了？</a></u></p>
+	<!--於資料庫提取資料
+	<div>提取資料</div>
+ 	<form action="fetch.php" method="post" >
+ 		<input type="text" name="find_name" placeholder="請輸入姓名">
+ 		<br>
+ 		<button type="submit">送出</button>
+		<button type="reset">重設</button>
+	</form>
+	<br>
+	-->
+	<!--於資料庫更新資料-->
+	<!--
+	<div>更新資料</div>
+ 	<form action="Name_Update.php" method="post" >
+ 		<input type="text" name="before_name" placeholder="輸入舊姓名">
+ 		<br>
+ 		<input type="text" name="update_name" placeholder="輸入新姓名">
+ 		<button type="submit">儲存修改</button>
+		<button type="reset">重設</button>
+	</form>
+	<form action="Phone_Update.php" method="post" >
+		<input type="text" name="before_phone" placeholder="輸入舊電話">
+ 		<br>
+ 		<input type="text" name="update_phone" placeholder="輸入新電話">
+ 		<button type="submit">儲存修改</button>
+		<button type="reset">重設</button>
+	</form>
+	<br>
+	-->
+	<!--於資料庫刪除資料-->
+	<!--
+	<div>刪除資料</div>
+	<form action="delete.php" method="post" >
+ 		<input type="text" name="Name_to_delete" placeholder="輸入欲刪除姓名">
+ 		<br>
+ 		<button type="submit">儲存修改</button>
+		<button type="reset">重設</button>
+	</form>
+	-->
+
+
+  </body>
+</html>                                                                         
