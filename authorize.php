@@ -44,7 +44,7 @@ if ($status and $status2) {
     ;location.href="board.php"</script>';
 }
 else if($status) {
-    echo '<script language="JavaScript">alert("密碼錯誤")
+    echo '<script language="JavaScript">alert("帳號或密碼錯誤")
     ;location.href="welcome.html"</script>';
 }
 else

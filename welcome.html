@@ -1,33 +1,149 @@
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--fontawesome -->
+    <script src="https://kit.fontawesome.com/ea72ee7652.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <div id="header">
-        <p><font size="10">WelcomeBack!</font></p>
-        <ul>
-            <li>
-                <a href="schedule.html"target="_blank"><font color="#000000">
-                開發進度</font></a></li>
-            <li><a href="mailto:theodore01027@gmail.com"><font color="#000000">連絡我</font></a></li>
+    <title>Welcome back!</title>
+
+    <style>
+      .box {
+
+        background-color: red;
+        color: white;
+        border: 1px solid blank;
+
+      }
+      .button {
+          background-color: #444444; /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
+      .button1 {border-radius: 12px;}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+      <a href="welcome.html" class="navbar-brand active">HomePage</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarCollapse"class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="board.php" class="nav-link">聊天室</a></li>
+          <li class="nav-item"><a href="register.html" class="nav-link">註冊</a></li>
+          <li class="nav-item"><a href="mailto:theodore01027@gmail.com" class="nav-link">Contact Me</a></li>
         </ul>
+      </div>
+
+    </nav>
+
+    <div class="container">
+      <!-- ...
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+        </div>
+      </div>
+       ... -->
+       <div class="row shadow-lg p-3 mb-5 bg-white rounded" style="height:450px">
+         <div class="container col-sm-8" style="background-color:gray;color:white">
+           <form method="post" action=authorize.php>
+
+             <div class="form-group row" style="text-align:center">
+
+               <label for="email" class="col-sm-5 col-form=label">電子郵件</label>
+               <input type="email" name="mail" id="email" class="col-sm-4 form-control" placeholder="請輸入你的電子郵件" >
+             </div>
+
+             <div class="form-group row" style="text-align:center">
+               <label for="password" class="col-sm-5 col-form-label">密碼</label>
+               <input type="password" name="passwd" id="password" class="col-sm-4 form-control"placeholder="請輸入你的密碼">
+             </div>
+
+             <div class="container">
+              <div class="row" style="text-align:center">
+                <div class="col-sm-6" >
+                  <input type="checkbox" name="checkbox" id="check" class="form-check-input">
+                  <label for="check" class="form-check-label">是否記住密碼</label>
+                </div>
+                <p class="col-sm">
+                  <button type="submit" name="submit" class="button button1 btn btn-primary" style="background-color:#B9B9FF">提交</button>
+                </p>
+                <p class="col-sm">
+                  <button type="reset" name="" value="重新輸入" class="button button1 btn btn-outline-primary">重置</button>
+                </p>
+              </div>
+             </div>
+           </form>
+         </div>
+
+         <div class="col-sm-4">
+           <div class="form-group row" style="text-align:center">
+
+               <div class="box col">NewPost</div>
+          <!--     <img src="..." class="img-fluid" alt="Responsive image">-->
+           </div>
+         </div>
+
+       </div>
+
+       <div class="row" style="font-size: 2.5rem;">
+         <div class="box col-sm-4" style="text-align:center;background-color:white;color:black;font-size:55px">
+           <i class="fas fa-user fa-sm"></i>
+           <p style="font-size:85px;"><font face="monospace"><b>1</b></font></p>
+           <p style="font-size:18px;"><font face="monospace"><b>線上人數</b></font></p>
+         </div>
+         <div class="box col-sm-4" style="text-align:center;background-color:white;color:black;font-size:55px">
+           <i class="fas fa-paper-plane fa-sm"></i>
+           <p style="font-size:85px;"><font face="monospace"><b>0</b></font></p>
+           <p style="font-size:18px;"><font face="monospace"><b>累計投稿</b></font></p>
+         </div>
+         <div class="box col-sm-4" style="text-align:center;background-color:white;color:black;font-size:55px">
+           <i class="far fa-eye fa-sm"></i>
+           <p style="font-size:85px;"><font face="monospace"><b>144</b></font></p>
+           <p style="font-size:18px;"><font face="monospace"><b>累計登入次數</b></font></p>
+         </div>
+       </div>
+
+
+
+
+
     </div>
 
-    <div id="content_p">
-        <form name="f1" method="post" action=authorize.php>
-            <table width="600px" height="400px">
-            <p>電子郵件<br>
-                <input type="text" style="font-size: 22px" name="mail" size="10">
-            </p>
-            <p>密碼<br>
-                <input type="text" style="font-size: 22px ; width: 204px" name="passwd" size="10">
-            </p>
-            <p>
-                <input type="submit" style="background-color:#4DFFFF ; width:100px;height:32px" value="登入">
-                <input type="reset" value="重新輸入">
-            </p>
-        </form>
-        <p>沒有帳號？<u><a href="register.html">註冊</a></u></p>
-        </table>
-    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+
+
+
 </html>
