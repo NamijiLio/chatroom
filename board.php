@@ -5,6 +5,11 @@
 	//unset($_SESSION['mail']); //清空$_SESSION["mail"]
 
 //	$_SESSION["name_record"] = $name_show;//設定name_record這個session變數的值為$name_show:用於add.php
+	if($_COOKIE['mail_test']==NULL)
+    {
+       echo '<script language="JavaScript">alert("帳號或密碼錯誤")
+    			;location.href="welcome.html"</script>';
+    }
 ?>
 <html>
 	<head>
@@ -30,7 +35,6 @@
 
 		<?php
 				
-			if($content){
 				$host = 'localhost';
 		        //登入phpmyadmin帳號
 		        $user = 'root';
@@ -84,9 +88,9 @@
 		        //    }
 		                //echo "共".mysqli_num_rows($result)."筆留言";
 		                //nl2br
-			}
+			
 
 		?>
-		<a href="welcome.html">回首頁</a>
+		<a href="welcome2.html">回首頁</a>
 	</body>
 </html>
